@@ -1,7 +1,8 @@
 :root{
     --backGround-color: rgb(255, 255, 255);
-    --content-color: rgb(76, 175, 80);
+    --content-color: rgb(177, 183, 14);
     --content-color-back: rgba(195, 235, 196, 0.705);
+    --header: #616553;
 }
 body {
     font-family: 'Segoe UI'
@@ -12,14 +13,17 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--content-color);
-    padding: 1%;
+    /* padding: 1%; */
     /* margin-right: 20%;
     margin-left: 20%; */
     border-radius: 100px;
    
 }
 .header h1{
-    color: var(--backGround-color);
+    font-family: 'Pacifico', cursive;
+    color: var(--header);
+    font-size: 50px;
+    /* color: var(--backGround-color); */
 }
 .content{
     display: flex;   
@@ -33,7 +37,7 @@ body {
     border-radius: 100px;
     margin: 10px 0 10px 0;
 }
-.favoritFoods{
+.favoritFoods, .favoritResturans{
     font-size: 180%;
     display: flex;   
     align-items: center;
@@ -46,16 +50,16 @@ body {
     border-left: 10px solid var(--content-color);    
 }
 .favoritResturans{
-    font-size: 180%;
+    /* font-size: 180%;
     display: flex;   
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 2%;
+    margin-right: 2%; */
     /* width: 30%; */
-    border-right: 10px solid var(--content-color);
+    /* border-right: 10px solid var(--content-color);
     border-left: 10px solid var(--content-color);
-    background-color:var(--content-color-back);
+    background-color:var(--content-color-back); */
 }
 
 .favoritFoods img, .favoritResturans img{
@@ -69,14 +73,14 @@ body {
     align-items: center;
     background-color: var(--content-color);
     border-radius: 100px;
-    padding: 1%;
+    /* padding: 1%; */
 }
 .footer a{
     padding: 1%;
     color: var(--backGround-color);
 }
 .footer i{
-    font-size: 400%;  /* הגדלת האייקונים פי 2 מהגודל הדיפולטיבי */
+    font-size: 50px;  /* הגדלת האייקונים פי 2 מהגודל הדיפולטיבי */
     margin: 0 30px;   /* מרווח בין האייקונים */
     transition: transform 0.2s ease;
 }
