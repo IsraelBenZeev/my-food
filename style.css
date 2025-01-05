@@ -1,0 +1,85 @@
+:root{
+    --backGround-color: rgb(255, 255, 255);
+    --content-color: rgb(76, 175, 80);
+    --content-color-back: rgba(195, 235, 196, 0.705);
+}
+body {
+    font-family: 'Segoe UI'
+
+}
+.header{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    background-color: var(--content-color);
+    padding: 1%;
+    /* margin-right: 20%;
+    margin-left: 20%; */
+    border-radius: 100px;
+   
+}
+.header h1{
+    color: var(--backGround-color);
+}
+.content{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url('background.jpg');
+    background-size: cover; /* התאמה מלאה לגודל הקונטיינר */
+    background-position: center; /* מיקום התמונה במרכז */
+    /* opacity: 0.8; 0 = שקוף לגמרי, 1 = אטום לגמרי */
+    border-radius: 100px;
+    margin: 10px 0 10px 0;
+}
+.favoritFoods{
+    font-size: 180%;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2%;
+    /* width: 30%; */
+    background-color:var(--content-color-back);
+    border-right: 10px solid var(--content-color);
+    border-left: 10px solid var(--content-color);    
+}
+.favoritResturans{
+    font-size: 180%;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 2%;
+    /* width: 30%; */
+    border-right: 10px solid var(--content-color);
+    border-left: 10px solid var(--content-color);
+    background-color:var(--content-color-back);
+}
+
+.favoritFoods img, .favoritResturans img{
+    border-radius: 20%;
+    border: 5px solid var(--content-color);
+    transition: transform 0.2s ease;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--content-color);
+    border-radius: 100px;
+    padding: 1%;
+}
+.footer a{
+    padding: 1%;
+    color: var(--backGround-color);
+}
+.footer i{
+    font-size: 400%;  /* הגדלת האייקונים פי 2 מהגודל הדיפולטיבי */
+    margin: 0 30px;   /* מרווח בין האייקונים */
+    transition: transform 0.2s ease;
+}
+.footer i:hover, .favoritResturans img:hover, .favoritFoods img:hover{
+    transform: scale(1.2);
+}
